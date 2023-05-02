@@ -1,0 +1,483 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1216,1818" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Build a bot which searches for a location in Booking.com, selects the start and end date from the calendar picker.&#xA;&#xA;Open Booking.com manually then use an Attach Browser activity and select the browser, tweak the selector to make it reliable and dynamic for any page of the site.&#xA;&#xA;Use a Type Into activity to type &quot;New York&quot; in the location field. Tweak the selector to exclude the id property and rather include the tag and class property. Ensure the typing happens in the background (simulate the typing of the text).&#xA;&#xA;Use a Click activity to open the Calendar popup.&#xA;&#xA;Drag in two Assign activities into the beginning of the workflow and assign two new variables &quot;FromDate&quot; and &quot;ToDate&quot; both of type String. The values must be of this format &quot;d MMMM yyyy&quot; for example, &quot;8 June 2021&quot;. You can choose your own start and end dates.&#xA;&#xA;Add in two Click activities to select the before and after dates in the calendar picker respectively. Hint: You will need to fine-tune the selectors to be able to identify the correct day and month. To do this, split the values from the FromDate and ToDate variables and create dynamic selectors.&#xA;&#xA;Set the bot up so that it clicks the next chevron icon/button on the calendar picker for the following months if the date i.e. selector is not available in the displayed calendar popup. Do this for both the From Date and the To Date. To do this add in a While activity and a Try Catch into the While, then the Click Date activity into the Try. In the Catch, add in a Click activity which clicks the next chevron icon/button.&#xA;" DisplayName="Main " sap:VirtualizedContainerService.HintSize="546,1753" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="FromDate" />
+      <Variable x:TypeArguments="x:String" Name="ToDate" />
+      <Variable x:TypeArguments="x:Boolean" Default="True" Name="RetryToDate" />
+      <Variable x:TypeArguments="x:String" Name="TMonthYear" />
+      <Variable x:TypeArguments="x:String" Name="FMonthYear" />
+      <Variable x:TypeArguments="x:String" Name="FDay" />
+      <Variable x:TypeArguments="x:String" Name="TDay" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[FromDate]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">19 September 2023</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[ToDate]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">23 September 2023</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:MultipleAssign>
+    <ui:MultipleAssign DisplayName="Assign Day and MonthYear" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[FDay]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[FromDate.Split(" "c)(0).ToString]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[TDay]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[ToDate.Split(" "c)(0).ToString]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[FMonthYear]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[FromDate.Split(" "c)(1) +" "+FromDate.Split(" "c)(2)]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[TMonthYear]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[ToDate.Split(" "c)(1) +" "+ToDate.Split(" "c)(2)]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:MultipleAssign>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Open Booking.com" sap:VirtualizedContainerService.HintSize="484,1041" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="0cd6d2b6-140e-450b-af78-84a935cf571d" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,824" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="CalendarInnerText" />
+              <Variable x:TypeArguments="x:Boolean" Name="RetryFromDate">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:Boolean" Value="True" />
+                </Variable.Default>
+              </Variable>
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type into Location" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="Batanes">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8ec313ae-3594-4e5c-ac5d-04b006a7313b" InformativeScreenshot="ea5a62105b6bab01c86deded33aa8d0b" Selector="&lt;webctrl tag='INPUT' class='ce45093752' parentclass='d4e829796c' parentid='indexsearch' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:TypeInto>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Open Calendar" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="96f697c8-547c-4bd6-ab46-f837cae1b7d2" InformativeScreenshot="87d3db7b949cc1d6e96f7a60bfd0ab0a" Selector="&lt;webctrl parentid='indexsearch' tabindex='-1' tag='DIV' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:Click>
+            <ui:LogMessage DisplayName="Log From While" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Processing From While Loop&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="Select From Date" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+              <ui:InterruptibleWhile.Body>
+                <TryCatch DisplayName="TryCatch -  If FROM Month Doesnt Exist" sap:VirtualizedContainerService.HintSize="297,52" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch.Try>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click From Date" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6b0bafa0-3a37-4f8e-a6ff-6720888ca5a4" InformativeScreenshot="80d55c991d129f443375c3d1b6340968" Selector="[string.Format(&quot;&lt;webctrl parentid='indexsearch' tag='DIV' innertext='{0}*' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aria-role='checkbox' tag='SPAN' visibleinnertext='{1}' /&gt;&quot;, FMonthYear, FDay)]">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:Click>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[RetryFromDate]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="454,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="s:Exception">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        </ActivityAction.Argument>
+                        <Sequence sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Chevron Button" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0cd6d2b6-140e-450b-af78-84a935cf571d" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaLQBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAL878KiBsACAdICJDQwZGY4NDRhLTUyYjktNDY3YS1hYjdjLTViMzMzMzM1MTY3OdgCBeACAQ&amp;sid=af16316e723a14bc9a63a474fddcc290&amp;keep_landing=1&amp;sb_price_type=total&amp;" DesignTimeRectangle="1501, 489, 60, 60" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' parentid='indexsearch' tag='BUTTON' class='fc63351294 a822bdf511 e3c025e003 fa565176a8 cfb238afa1 c334e6f658 ae1678b153 c9fa5fc96d be298b15fa' /&gt;" FuzzySelectorArgument="&lt;webctrl type='button' parentid='indexsearch' tag='BUTTON' class='fc63351294 a822bdf511 e3c025e003 fa565176a8 cfb238afa1 c334e6f658 ae1678b153 c9fa5fc96d be298b15fa' aaname='' /&gt;" Guid="d1883d08-02b3-4b41-b730-83d505877e73" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGaSURBVHhe7dldroIwEAVg1+FGXIjrYiHsSVRQxF8EFPBtzGla4jXx6SYOcc5JJlrf5rOlFCaLxULGWkmSfKzlcjnUarVytV6vXaVpKlmWDZ+bzUa2263keS673c5VURSy3+9lcrlcRKvKsvxXXa/XP1VVlSt8Px6PrmE0/g4Qmj8cDjKRH0/XdXI6nVzTr40DCPXzACG32801/goAGDMASN/3wz+P5rEMTQEgbdu65s0CILhQns9nVyYBHo+Hax47iUkAJGzFZgHqurYNgG3R7DUAwW5gGuB+v9u7EXoNloCpW+H3mAfAEjBxGvwUzAD3PMCPzQUAOB5zBvixuTRNY3sGEIAAjXtASgA/Nhcch9UA8LJCO2oAcRzLdDqVKIr8LzoBAF6UqMyA2WymjqAKgGgjqAMgmgijAEC0EEYDgASEb+4OowKYz+d2AULz2B6/mVEAaDWPqANoNo+oAmg3j6gBhFthzeYR1RkwlsOQ+kVQMwQgAAEIQAACEIAABPBjcyEAAQhAAAIQgAAEIIAfmwsBCEAAAuR5Lk8cGThQCIQxXgAAAABJRU5ErkJggg==" InformativeScreenshot="bfccd80a7d324139aa5f5d358ccb89a1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="RetryFromDate" />
+              </ui:InterruptibleWhile.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleWhile>
+            <ui:LogMessage DisplayName="Log ToWhile" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Processing To While Loop&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[RetryToDate]" DisplayName="Select To Date" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+              <ui:InterruptibleWhile.Body>
+                <TryCatch DisplayName="TryCatch -  If TO Month Doesnt Exist" sap:VirtualizedContainerService.HintSize="280,52" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch.Try>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click To Date" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6b0bafa0-3a37-4f8e-a6ff-6720888ca5a4" InformativeScreenshot="80d55c991d129f443375c3d1b6340968" Selector="[string.Format(&quot;&lt;webctrl parentid='indexsearch' tag='DIV' innertext='{0}*' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aria-role='checkbox' tag='SPAN' visibleinnertext='{1}' /&gt;&quot;, TMonthYear, TDay)]">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:Click>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[RetryToDate]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="456,337" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="s:Exception">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        </ActivityAction.Argument>
+                        <Sequence sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Chevron Button" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0cd6d2b6-140e-450b-af78-84a935cf571d" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaLQBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAL878KiBsACAdICJDQwZGY4NDRhLTUyYjktNDY3YS1hYjdjLTViMzMzMzM1MTY3OdgCBeACAQ&amp;sid=af16316e723a14bc9a63a474fddcc290&amp;keep_landing=1&amp;sb_price_type=total&amp;" DesignTimeRectangle="1501, 489, 60, 60" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' parentid='indexsearch' tag='BUTTON' class='fc63351294 a822bdf511 e3c025e003 fa565176a8 cfb238afa1 c334e6f658 ae1678b153 c9fa5fc96d be298b15fa' /&gt;" FuzzySelectorArgument="&lt;webctrl type='button' parentid='indexsearch' tag='BUTTON' class='fc63351294 a822bdf511 e3c025e003 fa565176a8 cfb238afa1 c334e6f658 ae1678b153 c9fa5fc96d be298b15fa' aaname='' /&gt;" Guid="d1883d08-02b3-4b41-b730-83d505877e73" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGaSURBVHhe7dldroIwEAVg1+FGXIjrYiHsSVRQxF8EFPBtzGla4jXx6SYOcc5JJlrf5rOlFCaLxULGWkmSfKzlcjnUarVytV6vXaVpKlmWDZ+bzUa2263keS673c5VURSy3+9lcrlcRKvKsvxXXa/XP1VVlSt8Px6PrmE0/g4Qmj8cDjKRH0/XdXI6nVzTr40DCPXzACG32801/goAGDMASN/3wz+P5rEMTQEgbdu65s0CILhQns9nVyYBHo+Hax47iUkAJGzFZgHqurYNgG3R7DUAwW5gGuB+v9u7EXoNloCpW+H3mAfAEjBxGvwUzAD3PMCPzQUAOB5zBvixuTRNY3sGEIAAjXtASgA/Nhcch9UA8LJCO2oAcRzLdDqVKIr8LzoBAF6UqMyA2WymjqAKgGgjqAMgmgijAEC0EEYDgASEb+4OowKYz+d2AULz2B6/mVEAaDWPqANoNo+oAmg3j6gBhFthzeYR1RkwlsOQ+kVQMwQgAAEIQAACEIAABPBjcyEAAQhAAAIQgAAEIIAfmwsBCEAAAuR5Lk8cGThQCIQxXgAAAABJRU5ErkJggg==" InformativeScreenshot="bfccd80a7d324139aa5f5d358ccb89a1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
+              </ui:InterruptibleWhile.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleWhile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Search Button" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0cd6d2b6-140e-450b-af78-84a935cf571d" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaLQBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKMn76iBsACAdICJGFkMWQyNWNhLTE1NDctNDJmZC05NmQwLTFkNjhjODMyNjU4ZdgCBeACAQ&amp;sid=66384f7076c5e614ef185e5a9be72c79&amp;keep_landing=1&amp;sb_price_type=total&amp;" CvElementArea="1502, 405, 141, 73" CvTextArea="1533, 431, 78, 22" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1506, 407, 135, 67" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='fc63351294 a822bdf511 d4b6b7a9e7 cfb238afa1 c938084447 f4605622ad aa11d0d5cd' aaname='Search' check:innerText='Search' /&gt;" Guid="a8ad747e-cf05-4135-bd14-15733aa3960a" ImageBase64="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" InformativeScreenshot="2ce4cac304b5b2a5121e2f60cb2b29a7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="Search" CvType="Text" DesignTimeRectangle="1536, 423, 75, 35" ElementType="Text" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl aaname='Search' parentid='indexsearch' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='indexsearch' tag='SPAN' type='' class='e57ffa4eb5' check:innerText='Search' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAnCAYAAABOkxWxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASBSURBVGhD7ZhNSyNLFIb9K/kJ/oUsXd5lti7jzqWrgCvJZiALF8LAYFahEYYrItwMdxMlMARhSF8QyWVwsONE02pMuk3SeaeqraRPVapjjYYLM7cOPIs69ZGutz7OqaysbHyD5ZVonRYztE6LGVqnxQyt02KG1mkxQ+u0mKF1WszQOi1maJ0WM7ROixlap8UMrfN/xF4bwiJUHX2bVLTOnS62z57Q6k0QRGJsYUEYoXV2P9/nF2Wp4q399QRPEWzO2n2pz6/M8sRzQvhiqNgitsu+hnDqfZQZzvkQ7m2E4NKKF0MLxUsxDrfvfeQKpOFvypLE81HtiXGYuaek0W/MksTrwLkV4zDzzm7khgasVvpo+OxYT+/MaALfH6Jcuda095A96KN6NQZrkhjv0w5QfO/N9zkdiUaAf36HlYKP8pX4sWiEktT+GvlaCFcJesFgDPcz6yvaqeJl3vdQ5VfTtM8wgtvsYU0aW0AL682x6MEtwsmnLjKkPp1rbJ3TvqpN0PrclfvUEiG0Fo3h7JP2HEm8B+xdTUSJ2wh703a7PZzcC7fOSMCTxKuHqcGSL9acFlKhcCcd3dh6IzjHXazSdgprjUS4wA9Rqtwi++4G+eMArdmuGuOQisGFYLusddHHdqWL3AdG5RFVnwhy+Sh/MBWvPZKD21Q8dQ7DMRrN59/IH/Ogx/qRgJeIx4wLNxjh8O975D6yb/lOF2eMcol8C0cqcNiqSROYGhtUe/wKj2hMV+s+wLpSnzl6QiCqgwuSHzo9FHfltjGlPlqiPcInbNM6Il5s/JsOOpLA61/ICeiF2Noh/TVI4g2HKEpBki3EQNQxc2u0jiEVZrD7oj6ER+8iYd6FfP4zZELuqeae2ujDFfV8Mvm5ehX6weQociTxlJ0c08Xh7LiaBQAqntdUrhbG5nlyjr0vSr1UUCl0sFljLw1FRHr+6eAv2iDEpjL+enyUWP7IA0eovmgWiHc7QJbWxZCFUn8rBenOO5ivz9STnRwHKVovFdIodFH8l84qWXVp279kZEJGL5kF4s1NhFMhSb7hK0gST7dTF/2mVFjIDRxyQ7candif7LwJTo50/TTsB/BEL/6KccWF/sc7fuzNjq1WvNIguS/Z/ZtT6zX8R+LJu2w6UJZEWt2doSP/T7LlWnX1nnyDeBu9JHjpoqOGJYl3B4e9Y0v7uoSWscuiIDlmjU/CT3fRkE1WF0EV6D2pikej88+Lx56YX5NMIWBH96Un5tLEm604z8IvgvjPgHI9wEl7LF/kPIWYfVRHTlZ5XnX2gDzP2+LcjSWzTRZ0WFoxFSJH0wmebnx8brtVZzkY/Z1XiMcX2aUBjo1fbTxii42/OM9blniLjO2usvp04onpoow+NiIEy+WkCRIL2iEarz62z2QO0l8KsaW9MN5y563uP6DM0oa5P0HjNypbwdodsqnHQOSGAyXBZm9D7ypE+Uh+6qW/Id9y5xF2fOzxXUYXSby1nT+Td/vSxLP8JFqnxQyt02KG1mkxQ+u0mKF1WszQOi1maJ0WA77hB+tNReCNAemwAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="276bc0f1b7b97124f0a26461be1f79b1.jpg" Selector="&lt;html app='chrome.exe' title='*Booking.com*' /&gt;" Title="Booking.com | Official site | The best hotels, flights, car rentals &amp; accommodations" Url="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaLQBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKMn76iBsACAdICJGFkMWQyNWNhLTE1NDctNDJmZC05NmQwLTFkNjhjODMyNjU4ZdgCBeACAQ&amp;sid=66384f7076c5e614ef185e5a9be72c79&amp;keep_landing=1&amp;sb_price_type=total&amp;" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
